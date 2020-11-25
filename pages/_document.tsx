@@ -9,6 +9,8 @@ import Document, {
 
 import { ServerStyleSheet } from 'styled-components';
 
+import { ScriptHydrationTheme } from '../lib/ScriptHydrationTheme';
+
 export default class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext,
@@ -43,6 +45,7 @@ export default class MyDocument extends Document {
       <Html lang="pt-BR">
         <Head />
         <body>
+          <ScriptHydrationTheme />
           <Main />
           <NextScript />
         </body>
